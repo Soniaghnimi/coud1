@@ -1,0 +1,453 @@
+/*!
+Theme Name: Shoppable Furnish
+Theme URI: https://bosathemes.com/shoppable-furnish
+Author: Bosa Themes
+Author URI: https://bosathemes.com
+Description:  Shoppable Furnish is beautiful multipurpose ecommerce theme. Shoppable Furnish is beautiful, fast, lightweight, responsive, extremely customizable, multipurpose ecommerce theme that you can use as a foundation to build versatile sites such as accessories, clean, deco, ecommerce, fashion, furniture, interior, interior design, minimal, modern, multipurpose, responsive, shop, shopping, store, delivery, woocommerce and preferably ideal for any type of sites. Shoppable Furnish works perfectly with Gutenberg and the most popular page builder Elementor that can easily drag-and-drop your ideas from the interface. Shoppable Furnish is built with SEO, speed, and usability in mind with the multiple Header & Footer layouts, predesigned starter sites includes awesome Home & Inner Pages that is incredibly customizable and powerful enough to take a stand among the crowd. Shoppable Furnish is compatible with all major plugins like WooCommerce, Yoast, Contact form 7, Mailchimp for WordPress, bbPress, etc. Looking for a multipurpose ecommerce theme? Look no further! Browse the demos to see that it's the only theme you will ever need: https://demo.bosathemes.com/shoppable/furnish
+Version: 1.0.0
+Requires PHP: 5.6
+Tested up to: 6.5
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: hello-shoppable
+Text Domain: shoppable-furnish
+Tags: blog, portfolio, news, grid-Layout, one-column, two-columns, three-columns, flexible-header, left-sidebar, right-sidebar, custom-background, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, post-formats, rtl-language-support, theme-options, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks
+
+Shoppable Furnish WordPress Theme, Copyright 2024 Bosa Themes
+Shoppable Furnish is distributed under the terms of the GNU General Public License v3
+
+Shoppable Furnish is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  color: #111111;
+  font-family: 'Jost', serif;
+  font-weight: 500;
+}
+
+.entry-content h1 a,
+.entry-content h2 a,
+.entry-content h3 a,
+.entry-content h4 a,
+.entry-content h5 a,
+.entry-content h6 a {
+  text-decoration: underline;
+}
+.entry-content p a, 
+.comment-content p a, 
+.entry-content li a, 
+.comment-content li a, .widget p a, 
+.comments-area .comment-list .comment-content a {
+  color: #2e92ff;
+}
+.entry-content p a:hover, 
+.entry-content p a:focus, 
+.comment-content p a:hover, 
+.comment-content p a:focus, 
+.entry-content li a:hover, 
+.entry-content li a:focus, 
+.comment-content li a:hover, 
+.comment-content li a:focus, 
+.widget p a:hover,
+.widget p a:focus,
+.comments-area .comment-list .comment-content a:hover,
+.comments-area .comment-list .comment-content a:focus {
+  color: #086abd;
+}
+.slide-item .entry-content h3 a,
+.list-post .entry-content h3 a,
+.grid-post .entry-content h3 a,
+.single-post .entry-content h3 a {
+  text-decoration: none;
+}
+.wp-block-quote {
+  padding: 30px 30px 30px 50px;
+  margin: 30px 0 30px 30px;
+}
+
+/*department section css*/
+.section-department-area {
+  padding-bottom: 70px;
+}
+.section-department-area .row {
+  row-gap: 70px;
+}
+.section-department-area .departments-wrapper{
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding: 40px 40px;
+}
+.section-department-area .section-title-wrap {
+  margin-bottom: 35px;
+  text-align: center;
+}
+.section-department-area .content-wrap .row{
+  row-gap: 30px;
+}
+.section-department-area .content-wrap .department-content-wrap{
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.section-department-area .content-wrap .department-content-wrap:hover {
+  box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.08);
+}
+.section-department-area .content-wrap .department-content-wrap .entry-title {
+  content: "";
+  position: absolute;
+  bottom: 16px;
+  left: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  padding: 5px 15px;
+  margin: 0px;
+  font-size: 13px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 480px) {
+  .section-department-area .departments-wrapper {
+    padding: 30px 20px;
+  }
+}
+
+/*views section css*/
+.section-view-area {
+  padding-bottom: 70px;
+}
+.section-view-area .view-content-wrap .row{
+  row-gap: 30px;
+}
+.section-view-area .view-item {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+}
+.view-content {
+  width: calc(100% - 115px);
+}
+.section-view-area .featured-image {
+  width: 80px;
+  position: relative;
+  border-radius: 5px;
+}
+.section-view-area .featured-image img{
+  border-radius: 5px;
+}
+.featured-image .view-quote-icon {
+  background-color: #FFFFFF;
+  position: absolute;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  right: -15px;
+  color: #333333;
+  border-radius: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.view-content .entry-title {
+  margin-bottom: 10px;
+}
+
+/*advert section css*/ 
+.section-advert-area {
+  padding-bottom: 70px;
+}
+.section-advert-area .row {
+  row-gap: 35px;
+}
+.section-advert-area .featured-image {
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  transition: box-shadow 0.4s;
+}
+.section-advert-area .featured-image:hover {
+  box-shadow: 5px 10px 20px -10px rgba(0, 0, 0, 0.16);
+}
+.section-advert-area .featured-image img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/*section top deals area */
+ .section-top-deal-area {
+    padding-bottom: 70px;
+ }
+.section-top-deal-area .content-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: #f9f9f9;
+    padding: 50px;
+    row-gap: 35px;
+    column-gap: 18px;
+    border-radius: 10px;
+}
+.section-top-deal-area .content-wrap .deal-content-wrap {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 31%;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.section-top-deal-area .content-wrap .deal-content-wrap:first-child,
+.section-top-deal-area .content-wrap .deal-content-wrap:last-child {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      height: 250px;
+      overflow: hidden;
+}
+.section-top-deal-area .deal-content-wrap .featured-image {
+  position: relative;
+}
+.section-top-deal-area .deal-content-wrap .featured-image:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: opacity 0.4s;
+}
+.section-top-deal-area .deal-content-wrap:hover .featured-image:before {
+  opacity: 0;
+}
+.section-top-deal-area .deal-content-wrap .entry-title {
+    content: "";
+    z-index: 2;
+    position: absolute;
+    bottom: 30px;
+    padding: 6px 20px;
+    margin: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background-color: rgba(255,255,255,.94);
+    color: #111;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    text-align: center;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 0 5px 5px 0;
+}
+.section-top-deal-area .deal-content-wrap .entry-title .fas {
+  margin-left: 5px;
+  font-size: 13px;
+}
+.section-top-deal-area .entry-title:hover {
+    background-color: #fff;
+}
+.section-top-deal-area .entry-title a:hover i {
+    -webkit-animation: moveright 0.6s infinite alternate;
+            animation: moveright 0.6s infinite alternate;
+}
+@-webkit-keyframes moveright {
+    from {
+        -webkit-transform: translatex(0px);
+                transform: translatex(0px);
+    }
+    to {
+        -webkit-transform: translatex(5px);
+                transform: translatex(5px);
+    }
+}
+@keyframes moveright {
+    from {
+        -webkit-transform: translatex(0px);
+                transform: translatex(0px);
+    }
+    to {
+        -webkit-transform: translatex(5px);
+                transform: translatex(5px);
+    }
+}
+@media screen and (max-width: 768px){
+    .section-top-deal-area .content-wrap {
+      padding: 40px 20px;
+      row-gap: 30px;
+    }
+}
+@media screen and (max-width: 576px) {
+  .section-top-deal-area .content-wrap {
+      row-gap: 20px;
+      justify-content: center;
+
+  }
+  .section-top-deal-area .content-wrap .deal-content-wrap {
+      -ms-flex-preferred-size: 47%;
+          flex-basis: 47%;
+      margin: 0;
+  }
+  .section-top-deal-area .content-wrap .deal-content-wrap:first-child,
+  .section-top-deal-area .content-wrap .deal-content-wrap:last-child {
+        height: auto;
+  }
+}
+@media screen and (max-width: 467px) {
+  .section-top-deal-area .content-wrap .deal-content-wrap {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      margin: 0;
+  }
+}
+
+/*testimonial css*/
+.section-feedback-area {
+  padding-bottom: 70px;
+}
+.section-feedback-area .row {
+  row-gap: 40px;
+}
+.section-feedback-area .entry-content {
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  padding: 70px 30px 30px;
+  position: relative;
+}
+.feedback-item .featured-image {
+  border-radius: 100%;
+  height: 100px;
+  overflow: hidden;
+  width: 100px;
+  margin: 0 auto -45px;
+  position: relative;
+  z-index: 1;
+}
+.feedback-item .entry-content a {
+  text-decoration: none;
+}
+.section-feedback-area .entry-text {
+  position: relative;
+}
+.section-feedback-area .entry-text p {
+  margin-bottom: 0;
+} 
+.section-feedback-area .feedback-quote-icon {
+  font-size: 50px;
+  opacity: 0.1;
+  position: absolute;
+  top: -30px;
+  left: 6px;
+}
+@media screen and (max-width: 467px) {
+  .section-feedback-area .entry-content {
+    padding: 70px 20px 30px;
+  }
+}
+
+/*special occasion*/
+.section-occasion-area {
+  padding-bottom: 70px;
+}
+.section-occasion-area .row {
+  row-gap: 30px;
+}
+.section-occasion-area .occasion-iconbox {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 13px -4px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  padding: 25px;
+  width: 100%;
+  transition: box-shadow 0.4s;
+  gap: 25px;
+}
+.section-occasion-area .occasion-iconbox:hover {
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+}
+.section-occasion-area .occasion-iconbox .occasion-icon {
+  background-color: #F2F2F2;
+  color: #333;
+  font-size: 28px;
+  width: 78px;
+  height: 78px;
+  line-height: 78px;
+  text-align: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.section-occasion-area .occasion-iconbox .entry-content {
+  width: -moz-calc(100% - 78px);
+  width: -webkit-calc(100% - 78px);
+  width: calc(100% - 78px);
+}
+.section-occasion-area .occasion-iconbox .entry-content h3 {
+  margin-bottom: 8px;
+}
+.section-occasion-area .occasion-iconbox .entry-content h3 a {
+  text-decoration: none;
+}
+.section-occasion-area .occasion-iconbox .event-page-link {
+  color: #333;
+}
+@media screen and (max-width: 467px) {
+  .section-occasion-area .occasion-iconbox {
+    flex-direction: column;
+    padding: 40px 20px 50px;
+    position: relative;
+  }
+  .section-occasion-area .entry-content {
+    text-align: center;
+  }
+  .section-occasion-area .occasion-iconbox .event-page-link {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 62px;
+    padding-left: 9px;
+    border-top-left-radius: 100%;
+    background-color: #F2F2F2;
+  }
+}
